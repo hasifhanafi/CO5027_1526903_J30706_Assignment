@@ -38,7 +38,7 @@
 				
 				<div id="myModal" class="modal">
 								<span class="close cursor" onclick="closeModal()">&times;</span>
-									<div class="modal-content">
+									<div class="modal-content"></div>
 
 									<div class="mySlides">
 									<div class="numbertext">1 / 15</div>
