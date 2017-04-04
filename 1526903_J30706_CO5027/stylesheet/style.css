@@ -1,0 +1,323 @@
+﻿body {
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family: Verdana;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div.header {
+    background-image: url('../images/c4m1.jpg');
+}
+
+nav {
+    text-align: center;
+    background-color: black;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+    nav a {
+        color: white;
+        margin: 30px;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+content {
+    background-color: transparent;
+    height: auto;
+}
+
+div.content table {
+    height: 500px;
+    width: 900px;
+    margin-bottom: 20px;
+}
+
+div.content5 table {
+    height: 500px;
+    width: 900px;
+    margin-bottom: 20px;
+    margin-left: -30px;
+}
+
+
+div.content img {
+    margin-top: 10px;
+}
+
+div.content th {
+    font-size: 20px;
+    text-align: left;
+    height: 100px;
+    width: 100px;
+}
+
+div.content td {
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding-left: 6%;
+}
+
+    div.content td img {
+        margin-top: 32px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+div.content1 {
+    background-color: grey;
+    height: auto;
+}
+
+    div.content1 h2 {
+        text-align: left;
+        margin-left: 75px;
+    }
+
+    div.content1 p {
+        text-align: justify;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    div.content1 table {
+        height: auto;
+        width: 455px;
+        margin-right: 400px;
+        margin-top: 10px;
+    }
+
+    div.content1 th {
+        font-size: 18px;
+        text-align: left;
+        padding: 5px;
+    }
+
+    div.content1 td {
+        height: auto;
+        width: auto;
+        text-align: left;
+        padding: 5px;
+    }
+
+
+div.footer {
+    background-color: black;
+    height: 80px;
+    width: 1000px;
+}
+
+div.footerimg {
+    margin-top: 15px;
+    margin-right: 35px;
+    float: right;
+}
+
+    div.footerimg img {
+        margin-right: 10px;
+    }
+
+div.column img {
+    margin-top: 10px;
+}
+
+main {
+    width: 1000px;
+}
+
+article {
+    background-color: white;
+    padding: 10px 15px;
+}
+
+iframe {
+    border: 0px;
+}
+
+footer {
+    clear: both;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+/*about CSS*/
+
+.about-style1 {
+    margin-top: 46px;
+    background-color: #C3C3BF;
+}
+
+.about-style2 {
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+.about-style3 {
+    text-align: left;
+    background-color: #C3C3BF;
+}
+
+.about-style4 {
+    background-color: #C3C3BF;
+}
+
+.about-style5 {
+    text-align: center;
+    background-color: #C3C3BF;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 40%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 0px;
+    padding: 16px;
+    margin-top: -50px;
+    margin-left: -395px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: -20px;
+}
+
+.prev {
+    left: 360px;
+}
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+div.numbertext img {
+    width: 300px;
+    height: 300px;
+}
+
+img {
+    margin-bottom: 4px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+img.hover-shadow {
+    transition: 0.3s
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+table#table1 {
+    width: 70%;
+    margin-left: -12%;
+    margin-right: 15%;
+}
+
+
