@@ -10,6 +10,8 @@
     
     <h1>Product:</h1>
 
+    <!-- This lightbox below below is from https://www.w3schools.com/howto/howto_js_lightbox.asp -->
+
 	<div class="content" style="text-align: center">
 	<table id="table1">
 				<tr>

@@ -9,6 +9,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <!-- This slideshow below is from http://www.menucool.com/responsive-slider -->
+
 <div class="content" style="text-align: center">	
 	
 	<h1 style="text-align:left"> Clothing4Men </h1>
@@ -29,7 +31,7 @@
     </div> 
 
  
-	
+	<!-- This lightbox below below is from https://www.w3schools.com/howto/howto_js_lightbox.asp -->
 		
 			<table id="table1">
 				<tr>
