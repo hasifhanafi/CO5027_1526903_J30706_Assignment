@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="product6.aspx.cs" Inherits="_1526903_J30706_CO5027.product6" %>
+﻿<%@ Page Title="product6" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="product6.aspx.cs" Inherits="_1526903_J30706_CO5027.product6" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <nav style="height: 37px">		
-		<a href="../product.aspx">Back</a>
+		<a href="product.aspx">Back</a>
 			
 	</nav>
 
@@ -14,7 +14,7 @@
 	<table id="table1">
 				<tr>
 					<td>
-					<img src="../images/clothes6.jpg" alt="clothes6" width="450" height="450" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></td>	
+					<img src="images/clothes6.jpg" alt="clothes6" width="450" height="450" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></td>	
 				</tr>
 	
 	
@@ -61,7 +61,7 @@
 
 									<div class="mySlides">
 									<div class="numbertext">1 / 15</div>
-										<img src="../images/clothes6.jpg" alt="clothes6" style="width:100%; height:850px;">
+										<img src="images/clothes6.jpg" alt="clothes6" style="width:100%; height:850px;">
 									</div>
 	</div>
 							

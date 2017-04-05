@@ -15,14 +15,14 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <img src="../images/c4m1.jpg" alt="clothes1" width="1000" height="250"/>
+        <img src="images/c4m1.jpg" alt="clothes1" width="1000" height="250"/>
 		
 	<nav style="height: 37px">		
-		<a href="Admin/default.aspx" runat="server">Home</a>
-		<a href="product.aspx" runat="server">Product</a>
-		<a href="about.aspx" runat="server">About</a>
-		<a href="contact.aspx" runat="server">Contact</a>
-        <a href="login.aspx" runat="server">Login</a>
+		<a href="~/default.aspx" runat="server">Home</a>
+		<a href="~/product.aspx" runat="server">Product</a>
+		<a href="~/about.aspx" runat="server">About</a>
+		<a href="~/contact.aspx" runat="server">Contact</a>
+        <a href="~/login.aspx" runat="server">Login</a>
 	</nav>       
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

@@ -206,6 +206,7 @@ footer {
     height: 100%;
     overflow: auto;
     background-color: black;
+    padding-left: 10%;
 }
 
 /* Modal Content */

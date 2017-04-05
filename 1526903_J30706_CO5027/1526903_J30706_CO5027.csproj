@@ -76,7 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.aspx" />
-    <Content Include="Admin\default.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\background.jpg" />
@@ -118,11 +118,11 @@
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\default.aspx.cs">
+    <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\default.aspx.designer.cs">
+    <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="contact.aspx.cs">
