@@ -1,11 +1,13 @@
 ﻿<%@ Page Title="home" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="_1526903_J30706_CO5027.Admin._default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="../JavaScript/slideshows/ninja-slider.css" rel="stylesheet"/>
-    <style type="text/css">
-        .auto-style1 {
-            width: 424px;
-        }
-    </style>
+
+   <!-- The JavaScript and CSS below is from http://www.menucool.com/responsive-slider -->
+
+    <script src="JavaScript/slideshows/ninja-slider.js"></script>
+    <link href="JavaScript/slideshows/ninja-slider.css" rel="stylesheet" />
+    <script src="JavaScript/slideshows/thumbnail-slider.js"></script>
+    <link href="JavaScript/slideshows/thumbnail-slider.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -15,22 +17,41 @@
 	
 	<h1 style="text-align:left"> Clothing4Men </h1>
 
-       <div id='ninja-slider'>
-        <div class="slider-inner">
-            <ul>
-                <li><a class="ns-img" href="images/clothes11.jpg"></a></li>
-                <li>
-                    <a class="ns-img" href="images/clothes12.jpeg"></a>
-                </li>
-                <li>
-                    <a class="ns-img" href="images/clothes13.jpg"></a>
-                </li>
-            </ul>
-            <div class="fs-icon"></div>
+
+        <div id='ninja-slider'>
+        <div>
+            <div class="slider-inner">
+                <ul>
+                    <li><a class="ns-img" href="images/clothes11.jpg"></a></li>
+                    <li><a class="ns-img" href="images/clothes12.jpeg"></a></li>
+                    <li><a class="ns-img" href="images/clothes13.jpg"></a></li>
+                    
+                </ul>
+                <div class="fs-icon" title="Expand/Close"></div>
+            </div>
+            <div id="thumbnail-slider">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <a class="thumb" href="images/clothes11.jpg"></a>
+                            <span>1</span>
+                        </li>
+                        <li>
+                            <a class="thumb" href="images/clothes12.jpeg"></a>
+                            <span>2</span>
+                        </li>
+                        <li>
+                            <a class="thumb" href="images/clothes13.jpg"></a>
+                            <span>3</span>
+                        </li>                   
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div> 
+    </div>
 
  
+
 	<!-- This lightbox below below is from https://www.w3schools.com/howto/howto_js_lightbox.asp -->
 		
 			<table id="table1">
@@ -112,7 +133,7 @@
 </script>		
 		
 </div>
-    <script src="../JavaScript/slideshows/ninja-slider.js"></script>
+    
 </asp:Content>
 
 
