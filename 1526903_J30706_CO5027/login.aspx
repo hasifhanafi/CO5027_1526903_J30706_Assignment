@@ -10,22 +10,29 @@
 			            <h1> Login </h1>
                         
                 
-                        <asp:Label ID="Label1" runat="server" Text="Username/E-mail:"></asp:Label>
+                        <asp:Label ID="lblUsername" runat="server" Text="Username:"></asp:Label>
                         <asp:TextBox ID="TxtBoxUsername" runat="server" Height="22px" style="margin-top: 11px" Width="205px"></asp:TextBox>
                         
                         <br />
                     
                         
-                        <asp:Label ID="Label2" runat="server" Text="Password:"></asp:Label>
-                        <asp:TextBox ID="TxtPassword" runat="server" Height="22px" style="margin-top: 50px" Width="205px"></asp:TextBox>
+                        <asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>
+                        <asp:TextBox ID="TxtPassword" runat="server" Height="22px" style="margin-top: 50px" Width="205px" TextMode="Password"></asp:TextBox>
                         
                         <br />
 			               
                         
 
                         <asp:Button ID="Button1" runat="server" Text="login" Height="39px" style="margin-top: 50px" Width="142px" />
+                        
+                        
+                        
+                        
+                        <p>Register now. Click <a href="register.aspx"> Here!</a></p>
 
-                        <asp:Literal ID="LitLoginError" runat="server"></asp:Literal>
+                        <asp:Literal ID="litLoginError" runat="server" Text="Invalid username/password. Please enter again!"></asp:Literal>
+                       
+                       
                         
 			            <br/>
 			            <br/>

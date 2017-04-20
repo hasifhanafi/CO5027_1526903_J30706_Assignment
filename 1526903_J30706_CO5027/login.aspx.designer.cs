@@ -13,13 +13,13 @@ namespace _1526903_J30706_CO5027 {
     public partial class login {
         
         /// <summary>
-        /// Label1 control.
+        /// lblUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblUsername;
         
         /// <summary>
         /// TxtBoxUsername control.
@@ -31,13 +31,13 @@ namespace _1526903_J30706_CO5027 {
         protected global::System.Web.UI.WebControls.TextBox TxtBoxUsername;
         
         /// <summary>
-        /// Label2 control.
+        /// lblPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblPassword;
         
         /// <summary>
         /// TxtPassword control.
@@ -58,12 +58,12 @@ namespace _1526903_J30706_CO5027 {
         protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// LitLoginError control.
+        /// litLoginError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal LitLoginError;
+        protected global::System.Web.UI.WebControls.Literal litLoginError;
     }
 }

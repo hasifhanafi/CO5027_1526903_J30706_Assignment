@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -13,5 +14,44 @@ namespace _1526903_J30706_CO5027
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnSend_Click(object sender, EventArgs e)
+        {
+
+
+
+            SmtpClient smtpClient = new SmtpClient();
+            smtpClient.EnableSsl = true;
+            smtpClient.UseDefaultCredentials = false;
+            smtpClient.Host = "smtp.gmail.com";
+            smtpClient.Port = 587;
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("hasifhanafi212@gmail.com", "hasif");
+
+            smtpClient.Credentials = credentials;
+
+            MailMessage msg = new MailMessage("hasifhanafi212@gmail.com", txtEmail.Text);
+            msg.Subject = "Name: " + txtName.Text + "Subject: " + txtSubject.Text;
+            msg.Body = txtMessage.Text;
+            smtpClient.Send(msg);
+
+
+            try
+            {
+                smtpClient.Send(msg);
+                litMsg.Text = "<p>Success, mail sent using SMTP with secure connection and credentials</p>";
+            }
+
+            catch (Exception exp)
+            {
+                litMsg.Text = "<p>Send Failed: " + exp.Message + ";" + exp.InnerException + "</p>";
+            }
+        }
     }
 }
+
+            

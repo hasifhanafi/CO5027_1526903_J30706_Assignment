@@ -25,7 +25,7 @@ namespace _1526903_J30706_CO5027
             }
             else
             {
-                LitLoginError.Text = "Cannot log in to invalid username or password";
+                litLoginError.Text = "Invalid username or password, cannot log in!";
             }
         }
 

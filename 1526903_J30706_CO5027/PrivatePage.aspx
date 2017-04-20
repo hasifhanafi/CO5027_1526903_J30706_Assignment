@@ -3,8 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <p>You are now in a protected page via successful log in.</p>
+
     <asp:Button ID="logout" runat="server" Text="Log Out" />
 
-    <asp:Label ID="success" runat="server" Text="SuccessFully Log Out"></asp:Label>
-
+    
 </asp:Content>

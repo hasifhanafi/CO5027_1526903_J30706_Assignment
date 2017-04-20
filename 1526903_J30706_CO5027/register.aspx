@@ -3,24 +3,24 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <asp:label runat="server" text="Fullname:" ID="lblFullname"></asp:label>
-    <asp:textbox runat="server" ID="txtFullname"></asp:textbox>
+       <p><asp:label runat="server" text="Fullname:" ID="lblFullname"></asp:label>
+    <asp:textbox runat="server" ID="txtFullname"></asp:textbox></p>
     <br />
 
-    <asp:label runat="server" text="E-mail:" id="lblEmail"></asp:label>
-    <asp:textbox runat="server" ID="txtEmail"></asp:textbox>
+    <p><asp:label runat="server" text="E-mail:" id="lblEmail"></asp:label>
+    <asp:textbox runat="server" ID="txtEmail"></asp:textbox></p>
     <br />
 
-    <asp:label runat="server" text="UserName:" id="lblUserName"></asp:label>
-    <asp:textbox runat="server" ID="txtUserName"></asp:textbox>
+    <p><asp:label runat="server" text="UserName:" id="lblUserName"></asp:label>
+    <asp:textbox runat="server" ID="txtUserName"></asp:textbox></p>
     <br />
 
-    <asp:label runat="server" text="Password:" id="lblPassword"></asp:label>
-    <asp:textbox runat="server" ID="txtPassword"></asp:textbox>
+    <p><asp:label runat="server" text="Password:" id="lblPassword"></asp:label>
+    <asp:textbox runat="server" ID="txtPassword" TextMode="Password"></asp:textbox></p>
     <br />
 
-    <asp:button runat="server" text="Sign Up" />
-
+    <asp:button runat="server" text="Sign Up" ID="BtnSignup" OnClick="BtnSignup_Click" CssClass="auto-style1" Width="159px" />
+    
     <asp:Literal ID="litRegisterError" runat="server"></asp:Literal>
 
 </asp:Content>

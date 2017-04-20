@@ -13,6 +13,7 @@ namespace _1526903_J30706_CO5027
         protected void Page_Load(object sender, EventArgs e)
         {
             HttpContext.Current.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            
         }
     }
 }

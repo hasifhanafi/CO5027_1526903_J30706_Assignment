@@ -20,14 +20,5 @@ namespace _1526903_J30706_CO5027 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button logout;
-        
-        /// <summary>
-        /// success control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label success;
     }
 }
