@@ -19,13 +19,14 @@ namespace _1526903_J30706_CO5027
             var userManager = new UserManager<IdentityUser>(userStore);
             var user = userManager.Find(TxtBoxUsername.Text, TxtPassword.Text);
             if (user !=null)
+
             {
                LogUserIn(userManager, user);
                 Server.Transfer("privatePage.aspx", true);
             }
             else
             {
-                litLoginError.Text = "Invalid username or password, cannot log in!";
+                litLoginError.Text = "Invalid username or password will reset the password text box to empty." ;
             }
         }
 

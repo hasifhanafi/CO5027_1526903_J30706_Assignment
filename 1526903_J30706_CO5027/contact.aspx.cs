@@ -30,14 +30,19 @@ namespace _1526903_J30706_CO5027
             smtpClient.UseDefaultCredentials = false;
             smtpClient.Host = "smtp.gmail.com";
             smtpClient.Port = 587;
-            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("hasifhanafi212@gmail.com", "hasif");
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("hhasif212@gmail.com", "hasif123");
 
             smtpClient.Credentials = credentials;
 
-            MailMessage msg = new MailMessage("hasifhanafi212@gmail.com", txtEmail.Text);
+            MailMessage msg = new MailMessage("hhasif212@gmail.com", txtEmail.Text);
             msg.Subject = "Name: " + txtName.Text + "Subject: " + txtSubject.Text;
             msg.Body = txtMessage.Text;
             smtpClient.Send(msg);
+
+            MailMessage MailMessage = new MailMessage();
+            MailMessage.From = new MailAddress("hhasif212@gmail.com");
+            MailMessage.To.Add(txtEmail.Text);
+            MailMessage.Subject = txtSubject.Text;
 
 
             try

@@ -23,14 +23,11 @@
 			               
                         
 
-                        <asp:Button ID="Button1" runat="server" Text="login" Height="39px" style="margin-top: 50px" Width="142px" />
-                        
-                        
-                        
-                        
+                        <asp:Button ID="btnlogin" runat="server" Text="login" Height="39px" style="margin-top: 50px" Width="142px" />
+                      
                         <p>Register now. Click <a href="register.aspx"> Here!</a></p>
 
-                        <asp:Literal ID="litLoginError" runat="server" Text="Invalid username/password. Please enter again!"></asp:Literal>
+                        <asp:Literal ID="litLoginError" runat="server"></asp:Literal>
                        
                        
                         

@@ -49,13 +49,13 @@ namespace _1526903_J30706_CO5027 {
         protected global::System.Web.UI.WebControls.TextBox TxtPassword;
         
         /// <summary>
-        /// Button1 control.
+        /// btnlogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnlogin;
         
         /// <summary>
         /// litLoginError control.
