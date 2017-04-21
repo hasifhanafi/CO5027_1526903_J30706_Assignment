@@ -107,6 +107,7 @@
     <Content Include="JavaScript\slideshows\thumbnail-slider.css" />
     <Content Include="JavaScript\slideshows\thumbnail-slider.js" />
     <Content Include="JavaScript\_vti_cnf\showslides.js" />
+    <Content Include="map.js" />
     <Content Include="packages.config" />
     <Content Include="privatepage.aspx" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />

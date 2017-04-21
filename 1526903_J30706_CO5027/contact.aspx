@@ -41,6 +41,14 @@
                             
                          <p><asp:Literal ID="litMsg" runat="server"></asp:Literal></p>
                         
+                        <div id="clothing4menmap"></div>
+                        
+                        <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzwfn9vn6jpcr808xTaHLYkTTb36ZHGa8&callback=initMap">
+                        </script>
+
+                         <script src="map.js"></script>
+
 			            <br/>
 			            <br/>
 	</div>

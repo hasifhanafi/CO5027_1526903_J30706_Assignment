@@ -23,7 +23,7 @@
 			               
                         
 
-                        <asp:Button ID="btnlogin" runat="server" Text="login" Height="39px" style="margin-top: 50px" Width="142px" />
+                        <asp:Button ID="btnlogin" runat="server" Text="login" Height="39px" style="margin-top: 50px" Width="142px" OnClick="btnlogin_Click" />
                       
                         <p>Register now. Click <a href="register.aspx"> Here!</a></p>
 

@@ -321,4 +321,8 @@ table#table1 {
     margin-right: 15%;
 }
 
-
+#clothing4menmap {
+    width: 100%;
+    height: 400px;
+    background-color: gray;
+}
