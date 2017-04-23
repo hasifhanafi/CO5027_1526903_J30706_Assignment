@@ -20,6 +20,8 @@ namespace _1526903_J30706_CO5027
 
         }
 
+        //This was retrieved from http://tutorials.tinyappco.com/ASPNET/Identity
+
         protected void btnSend_Click(object sender, EventArgs e)
         {
 

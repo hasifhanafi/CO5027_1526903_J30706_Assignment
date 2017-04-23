@@ -34,7 +34,7 @@
 				<td class="about-style4">Cash on Delivery</td>
 			</tr>
 		</table>
-		
+		</div>
 		
 
 	<p class="about-style3"></p>

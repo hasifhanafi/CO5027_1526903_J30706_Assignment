@@ -1,4 +1,4 @@
-﻿<%@ Page Title="contact" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="_1526903_J30706_CO5027.contact" %>
+﻿    <%@ Page Title="contact" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="_1526903_J30706_CO5027.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -41,6 +41,10 @@
                             
                          <p><asp:Literal ID="litMsg" runat="server"></asp:Literal></p>
                         
+                        <br />
+                        
+                        <!--The google map below was retrieved from https://developers.google.com/maps/documentation/javascript/tutorial -->
+
                         <div id="clothing4menmap"></div>
                         
                         <script async defer

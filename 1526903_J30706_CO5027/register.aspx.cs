@@ -18,6 +18,8 @@ namespace _1526903_J30706_CO5027
 
         }
 
+        //This was retrieved from http://tutorials.tinyappco.com/ASPNET/Identity
+
         protected void BtnSignup_Click(object sender, EventArgs e)
         {
             // create a dbcontext that specified the connection string

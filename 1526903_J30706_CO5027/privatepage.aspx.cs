@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 
 namespace _1526903_J30706_CO5027
+
+//This was retrieved from http://tutorials.tinyappco.com/ASPNET/Identity
 {
     public partial class PrivatePage : System.Web.UI.Page
     {
