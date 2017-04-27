@@ -17,7 +17,7 @@
                     
                         
                         <asp:Label ID="lblEmail" runat="server" Text="E-mail:"></asp:Label>
-                        <asp:TextBox ID="txtEmail" runat="server" Height="22px" style="margin-top: 50px" Width="205px"></asp:TextBox>
+                        <asp:TextBox ID="txtEmail" runat="server" Height="22px" style="margin-top: 50px" Width="205px" TextMode="Email"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="reqValEmail" runat="server" ErrorMessage="E-mail cannot be left blank, please enter your valid e-mail address!" ControlToValidate="txtEmail" BackColor="Yellow" BorderColor="Black"></asp:RequiredFieldValidator>
                         <br />
 			               
