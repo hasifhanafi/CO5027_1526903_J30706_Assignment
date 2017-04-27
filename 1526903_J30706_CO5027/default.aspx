@@ -25,6 +25,9 @@
                     <li><a class="ns-img" href="images/clothes11.jpg"></a></li>
                     <li><a class="ns-img" href="images/clothes12.jpeg"></a></li>
                     <li><a class="ns-img" href="images/clothes13.jpg"></a></li>
+                    <li><a class="ns-img" href="images/clothes7.jpg"></a></li>
+                    <li><a class="ns-img" href="images/clothes8.jpg"></a></li>
+                    <li><a class="ns-img" href="images/clothes9.jpg"></a></li>
                     
                 </ul>
                 <div class="fs-icon" title="Expand/Close"></div>
@@ -43,7 +46,19 @@
                         <li>
                             <a class="thumb" href="images/clothes13.jpg"></a>
                             <span>3</span>
-                        </li>                   
+                        </li> 
+                         <li>
+                            <a class="thumb" href="images/clothes7.jpg"></a>
+                            <span>4</span>
+                        </li>
+                        <li>
+                            <a class="thumb" href="images/clothes8.jpg"></a>
+                            <span>5</span>
+                        </li>
+                        <li>
+                            <a class="thumb" href="images/clothes9.jpg"></a>
+                            <span>6</span>
+                        </li>    
                     </ul>
                 </div>
             </div>
@@ -57,12 +72,20 @@
 			<table id="table1">
 				<tr>
 					<td>
-					<img src="images/clothes7.jpg" alt="clothes7" width="350" height="350" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/></td>
+					<img src="images/clothes1.jpg" alt="clothes1" width="350" height="350" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/></td>
 					<td>
-					<img src="images/clothes8.jpg" alt="clothes8" width="350" height="350" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/></td>
+					<img src="images/clothes2.jpg" alt="clothes2" width="350" height="350" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/></td>
 					<td>
-					<img src="images/clothes9.jpg" alt="clothes9" width="350" height="350" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/></td>
-				</tr>	
+					<img src="images/clothes3.jpg" alt="clothes3" width="350" height="350" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/></td>
+				</tr>
+                	<tr>
+					<td>
+					<img src="images/clothes4.jpg" alt="clothes4" width="350" height="350" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/></td>
+					<td>
+					<img src="images/clothes5.jpg" alt="clothes5" width="350" height="350" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/></td>
+					<td>
+					<img src="images/clothes6.jpg" alt="clothes6" width="350" height="350" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/></td>
+				</tr>
 				</table>
 
 				<div id="myModal" class="modal">
@@ -71,17 +94,31 @@
 
 									<div class="mySlides">
 									<div class="numbertext">1 / 15</div>
-										<img src="images/clothes7.jpg" alt="clothes7" style="width:100%; height:850px;">
+										<img src="images/clothes1.jpg" alt="clothes1" style="width:100%; height:850px;">
 							</div>
 
 									<div class="mySlides">
 									<div class="numbertext">2 / 15</div>
-										<img src="images/clothes8.jpg" alt="clothes8" style="width:100%; height:850px;">
+										<img src="images/clothes2.jpg" alt="clothes2" style="width:100%; height:850px;">
 							</div>
 
 									<div class="mySlides">
 									<div class="numbertext">3 / 15</div>
-										<img src="images/clothes9.jpg" alt="clothes9" style="width:100%; height:850px;">
+										<img src="images/clothes3.jpg" alt="clothes3" style="width:100%; height:850px;">
+							</div>
+                                        	<div class="mySlides">
+									<div class="numbertext">1 / 15</div>
+										<img src="images/clothes4.jpg" alt="clothes4" style="width:100%; height:850px;">
+							</div>
+
+									<div class="mySlides">
+									<div class="numbertext">2 / 15</div>
+										<img src="images/clothes5.jpg" alt="clothes5" style="width:100%; height:850px;">
+							</div>
+
+									<div class="mySlides">
+									<div class="numbertext">3 / 15</div>
+										<img src="images/clothes6.jpg" alt="clothes6" style="width:100%; height:850px;">
 							</div>
 
 							
