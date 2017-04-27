@@ -15,14 +15,14 @@
     </asp:ContentPlaceHolder>
      <style type="text/css">
          .auto-style1 {
-             width: 88px;
-             height: 47px;
+             width: 87px;
+             height: 29px;
              margin-left: 870px;
              margin-top: 18px;
          }
      </style>
 </head>
-<body>
+
 <body>
     <form id="form1" runat="server">
     <div>
@@ -41,17 +41,30 @@
         </asp:ContentPlaceHolder>
     
 
-    	<div class="footer">           
+	    </div>
+    </form>
+
+
+    	<div class="footer">   
+            
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border-style: none; border-color: inherit; border-width: 0;"
             src="http://jigsaw.w3.org/css-validator/images/vcss"
             alt="Valid CSS!" class="auto-style1" />
-    </a>
+    </a>  
           
-		</div>
-	</div>
-    </form>
+    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2F1526903.studentwebserver.co.uk%2Fco5027%2Fdefault.aspx">Home Page Validator</a>
+         
+    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2F1526903.studentwebserver.co.uk%2Fco5027%2Fproduct.aspx">Product Page Validator</a>
 
+    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2F1526903.studentwebserver.co.uk%2Fco5027%2Fabout.aspx">About Page Validator</a>
+
+    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2F1526903.studentwebserver.co.uk%2Fco5027%2Fcontact.aspx">Contact Page Validator</a>
+
+    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2F1526903.studentwebserver.co.uk%2Fco5027%2Flogin.aspx">Login Page Validator</a>
+
+		</div>
+	    
 
 </body>
 </html>

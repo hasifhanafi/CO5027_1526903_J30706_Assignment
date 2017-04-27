@@ -9,8 +9,9 @@
 	<img src="images/c4m.png" alt="c4m" width="450" height="350" class="about-style1">
 	
 	<h2 class="about-style3">Clothing4Men:</h2> 
-	<h4><p class="about-style3">Clothing4Men was established on 1993 by the founder, Muhammad Hasif Bin Hanafi, The founder first began selling men's clothes at a street vendor and then soon became successfull. 
-	Upon being successfull, the founder began opening his own company which is named Clothing4Men, soon after it became an online store where customers could buy the company's branded clothes through online shopping experience.</p></h4>
+	<h4 class="about-style3">Clothing4Men was established on 1993 by the founder, Muhammad Hasif Bin Hanafi, The founder first began selling men's clothes at a street vendor and then soon became successfull. 
+	Upon being successfull, the founder began opening his own company which is named Clothing4Men, 
+        soon after it became an online store where customers could buy the company's branded clothes through online shopping experience.</h4>
 			
 			<table class="about-style2"  style="width: 1001px; height: 610px">
 			<tr>

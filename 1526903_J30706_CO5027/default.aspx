@@ -63,7 +63,8 @@
 					<td>
 					<img src="images/clothes9.jpg" alt="clothes9" width="350" height="350" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/></td>
 				</tr>	
-				
+				</table>
+
 				<div id="myModal" class="modal">
 								<span class="close cursor" onclick="closeModal()">&times;</span>
 									<div class="modal-content">
@@ -82,12 +83,15 @@
 									<div class="numbertext">3 / 15</div>
 										<img src="images/clothes9.jpg" alt="clothes9" style="width:100%; height:850px;">
 							</div>
+
 							
 							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 							<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-							
-			</table>
+                                    </div>
+
+				</div>    
+			
 		
 	
 		
