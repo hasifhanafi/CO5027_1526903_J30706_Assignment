@@ -106,33 +106,31 @@
 
 /* ---------Arrow buttons ------- */   
 /* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */ 
-#ninja-slider-pause-play { display:none;}    
+#ninja-slider-pause-play { display:none;}
 
-#ninja-slider-prev, #ninja-slider-next
-{
+#ninja-slider-prev, #ninja-slider-next {
     position: absolute;
-    display:inline-block;
-    width:42px;
-    height:56px;
-    line-height:56px;
+    display: inline-block;
+    width: 42px;
+    height: 56px;
+    line-height: 56px;
     top: 50%;
-    margin-top:-28px;
-    background-color:rgba(0,0,0,0.4);
-    background-color:#ccc\9;/*IE8 hack*/
-    backface-visibility:hidden;
-    color:white;
-    overflow:hidden;
-    white-space:nowrap;
+    margin-top: -28px;
+    background-color: rgba(0,0,0,0.4);
+    background-color: #262423; 
+    backface-visibility: hidden;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
     -webkit-user-select: none;
-    user-select:none;
-    border-radius:2px;
-    z-index:10;
-    opacity:0.3; 
-    font-family:sans-serif;   
-    font-size:13px;
-    cursor:pointer;
-    -webkit-transition:all 0.7s;
-    transition:all 0.7s;
+    border-radius: 2px;
+    z-index: 10;
+    opacity: 0.3;
+    font-family: sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
 }
 
 .slider-inner:hover #ninja-slider-prev, .slider-inner:hover #ninja-slider-next {
@@ -189,7 +187,7 @@
 {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    user-select: none;
+   
 }
 
 

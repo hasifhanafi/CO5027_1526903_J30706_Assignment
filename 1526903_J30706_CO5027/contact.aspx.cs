@@ -36,10 +36,10 @@ namespace _1526903_J30706_CO5027
 
             smtpClient.Credentials = credentials;
 
-            MailMessage msg = new MailMessage("hhasif212@gmail.com", txtEmail.Text);
+            MailMessage msg = new MailMessage("hhasif212@gmail.com", "hhasif212@gmail.com");
             msg.Subject = "Name: " + txtName.Text + "Subject: " + txtSubject.Text;
             msg.Body = txtMessage.Text;
-            smtpClient.Send(msg);
+          
 
             MailMessage MailMessage = new MailMessage();
             MailMessage.From = new MailAddress("hhasif212@gmail.com");
