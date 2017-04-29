@@ -32,7 +32,7 @@
 			</tr>
 			<tr>
 				<th class="about-style5" style="width: 146px">Payment Method:</th> 
-				<td class="about-style4">Cash on Delivery</td>
+				<td class="about-style4">Credit Card</td>
 			</tr>
 		</table>
 		</div>
