@@ -58,6 +58,11 @@ namespace _1526903_J30706_CO5027
                 litMsg.Text = "<p>Send Failed: " + exp.Message + ";" + exp.InnerException + "</p>";
             }
         }
+
+        protected void txtMessage_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
