@@ -37,7 +37,7 @@ namespace _1526903_J30706_CO5027
             smtpClient.Credentials = credentials;
 
             MailMessage msg = new MailMessage("hhasif212@gmail.com", "hhasif212@gmail.com");
-            msg.Subject = "Name: " + txtName.Text + "Subject: " + txtSubject.Text;
+            msg.Subject = "Name: " + txtName.Text + " Subject: " + txtSubject.Text + " E-mail: " + txtEmail.Text;
             msg.Body = txtMessage.Text;
           
 
