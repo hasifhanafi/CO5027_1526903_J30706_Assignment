@@ -5,6 +5,8 @@
     
     <br />
 
+    <!-- The code below was retireved from http://tutorials.tinyappco.com/ASPNET/PayPal -->
+
     <asp:Label ID="lblproductitemQuantity" runat="server" Text="Choose your quantity:" AssociatedControlID="ddlproductitemQuantity"></asp:Label>
     <asp:DropDownList ID="ddlproductitemQuantity" runat="server" Width="43px">
         <asp:ListItem>1</asp:ListItem>

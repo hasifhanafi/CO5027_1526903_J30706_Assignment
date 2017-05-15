@@ -15,6 +15,7 @@ namespace _1526903_J30706_CO5027
 
         }
 
+         //The code below was retireved from http://tutorials.tinyappco.com/ASPNET/PayPal
 
         protected void btnProductItem_Click(object sender, EventArgs e)
         {
