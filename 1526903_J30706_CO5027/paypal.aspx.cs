@@ -63,6 +63,9 @@ namespace _1526903_J30706_CO5027
             payer.payment_method = "paypal";
 
             var redirectUrls = new RedirectUrls();
+            String strPathAndQuery = HttpContext.Current.Request.Url.PathAndQuery;
+            String strUrl = HttpContext.Current.Request.Url.AbsoluteUri.Replace(strPathAndQuery, "/");
+
             redirectUrls.cancel_url = "http://localhost:33339/cancel.aspx";
             redirectUrls.return_url = "http://localhost:33339/completepurchase.aspx";
 
