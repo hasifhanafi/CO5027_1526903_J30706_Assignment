@@ -7,16 +7,107 @@
 
     <!-- The Code below was retrieved from http://tutorials.tinyappco.com/ASPNET/Gridviews -->
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="ProductDataSource" Height="204px" Width="995px" CellSpacing="-1" GridLines="None">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="ProductDataSource" Height="211px" Width="995px" CellSpacing="-1" GridLines="None" BackColor="#FFFF99" ShowFooter="True" >
+        
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ButtonType="Button" />
-            <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
-            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
-            <asp:BoundField DataField="Code" HeaderText="Code" SortExpression="Code" />
-            <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
-            <asp:BoundField DataField="Stock" HeaderText="Stock" SortExpression="Stock" />
+            <asp:TemplateField HeaderText="Id" InsertVisible="False" SortExpression="Id">
+                
+                <EditItemTemplate>
+                    <asp:Label ID="Label1" runat="server" Text='<%# Eval("Id") %>'></asp:Label>
+                </EditItemTemplate>
+
+                <ItemTemplate>
+                    <asp:Label ID="Label1" runat="server" Text='<%# Bind("Id") %>'></asp:Label>
+                </ItemTemplate>
+
+                <FooterTemplate>
+                    <asp:LinkButton  ID="lblInsert" runat="server" ValidationGroup="Insert" OnClick="lblInsert_Click">Insert</asp:LinkButton>
+                </FooterTemplate>
+
+            </asp:TemplateField>
+
+            <asp:TemplateField HeaderText="Name" SortExpression="Name">
+                
+                <EditItemTemplate>
+                    <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="reqName" runat="server" ErrorMessage="<br/>Name is a required field" BackColor="Red" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
+                </EditItemTemplate>
+
+                <ItemTemplate>
+                    <asp:Label ID="Label2" runat="server" Text='<%# Bind("Name") %>'></asp:Label>
+                </ItemTemplate>
+
+                <FooterTemplate>
+                    <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="reqName1" runat="server" ErrorMessage="<br/>Name is a required field" BackColor="Red" ControlToValidate="txtName" ValidationGroup="Insert"></asp:RequiredFieldValidator>
+                </FooterTemplate>
+
+            </asp:TemplateField>
+
+            <asp:TemplateField HeaderText="Code" SortExpression="Code">
+                
+                <EditItemTemplate>
+                    <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("Code") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="reqCode" runat="server" ErrorMessage="<br/>Code is a required field" BackColor="Red" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
+                </EditItemTemplate>
+
+                <ItemTemplate>
+                    <asp:Label ID="Label3" runat="server" Text='<%# Bind("Code") %>'></asp:Label>
+                </ItemTemplate>
+
+                <FooterTemplate>
+                    <asp:TextBox ID="txtCode" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="reqCode1" runat="server" ErrorMessage="<br/>Code is a required field" BackColor="Red" ControlToValidate="txtCode" ValidationGroup="Insert"></asp:RequiredFieldValidator>
+                </EditItemTemplate>
+                </FooterTemplate>
+
+            </asp:TemplateField>
+
+            <asp:TemplateField HeaderText="Price" SortExpression="Price">
+                
+                <EditItemTemplate>
+                    <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("Price") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="reqPrice" runat="server" ErrorMessage="<br/>Price is a required field" BackColor="Red" ControlToValidate="TextBox3"></asp:RequiredFieldValidator>
+                </EditItemTemplate>
+
+                <ItemTemplate>
+                    <asp:Label ID="Label4" runat="server" Text='<%# Bind("Price") %>'></asp:Label>
+                </ItemTemplate>
+
+                <FooterTemplate>
+                    <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
+                     <asp:RequiredFieldValidator ID="reqPrice1" runat="server" ErrorMessage="<br/>Price is a required field" BackColor="Red" ControlToValidate="txtPrice" ValidationGroup="Insert"></asp:RequiredFieldValidator>
+                </FooterTemplate>
+
+            </asp:TemplateField>
+
+            <asp:TemplateField HeaderText="Stock" SortExpression="Stock">
+                
+                <EditItemTemplate>
+                    <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("Stock") %>'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="reqStock" runat="server" ErrorMessage="<br/>Stock is a required field" BackColor="Red" ControlToValidate="TextBox4"></asp:RequiredFieldValidator>
+                </EditItemTemplate>
+
+                <ItemTemplate>
+                    <asp:Label ID="Label5" runat="server" Text='<%# Bind("Stock") %>'></asp:Label>
+                </ItemTemplate>
+
+                <FooterTemplate>
+                    <asp:TextBox ID="txtStock" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="reqStock1" runat="server" ErrorMessage="<br/>Stock is a required field" BackColor="Red" ControlToValidate="txtStock" ValidationGroup="Insert"></asp:RequiredFieldValidator>
+                </FooterTemplate>
+
+            </asp:TemplateField>
+
         </Columns>
+
 </asp:GridView>
+
+                <asp:ValidationSummary ValidationGroup="Insert" ID="ValidationSummary1" runat="server" />
+
+                <asp:ValidationSummary ID="ValidationSummary2" runat="server" />
+
 
     <!-- The Code below was retrieved from http://tutorials.tinyappco.com/ASPNET/GridViewValidation -->
 
@@ -47,4 +138,6 @@
     </UpdateParameters>
     </asp:SqlDataSource>
 
+    <br />
+    <br />
 </asp:Content>

@@ -65,10 +65,13 @@
         </div>
     </div>
 
- 
+            <br /> 
 
 	<!-- This lightbox below below is from https://www.w3schools.com/howto/howto_js_lightbox.asp -->
-		
+		<h2>Product:</h2>
+
+           <br /> 
+
 			<table id="table1">
 				<tr>
 					<td>

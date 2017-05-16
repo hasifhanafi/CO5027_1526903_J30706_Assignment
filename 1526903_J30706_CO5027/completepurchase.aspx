@@ -5,6 +5,8 @@
 
     <br />
 
+    <!-- The code below was retireved from http://tutorials.tinyappco.com/ASPNET/PayPal 
+
     <h2>Complete Your Purchase</h2>
 
     <br />

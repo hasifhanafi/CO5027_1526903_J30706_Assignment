@@ -11,7 +11,20 @@ namespace _1526903_J30706_CO5027
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           
+        }
 
+        protected void lblInsert_Click(object sender, EventArgs e)
+        {
+            ProductDataSource.InsertParameters["Name"].DefaultValue = ((TextBox)GridView1.FooterRow.FindControl("txtName")).Text;
+
+            ProductDataSource.InsertParameters["Code"].DefaultValue = ((TextBox)GridView1.FooterRow.FindControl("txtCode")).Text;
+
+            ProductDataSource.InsertParameters["Price"].DefaultValue = ((TextBox)GridView1.FooterRow.FindControl("txtPrice")).Text;
+
+            ProductDataSource.InsertParameters["Stock"].DefaultValue = ((TextBox)GridView1.FooterRow.FindControl("txtStock")).Text;
+
+            ProductDataSource.Insert();
         }
     }
 }
