@@ -23,7 +23,7 @@ namespace _1526903_J30706_CO5027
         protected void BtnSignup_Click(object sender, EventArgs e)
         {
             // create a dbcontext that specified the connection string
-            var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            var identityDbContext = new IdentityDbContext("db_1526903_j30706_co5027_asgConnectionString2");
 
             //create user store and user manager
             var userStore = new UserStore<IdentityUser>(identityDbContext);
@@ -37,6 +37,7 @@ namespace _1526903_J30706_CO5027
             IdentityResult result = manager.Create(user, txtPassword.Text);
 
             IdentityRole endUserRole = new IdentityRole("admin");
+
             //create role name (admin)
             roleManager.Create(endUserRole);
             manager.AddToRole(user.Id, "admin");

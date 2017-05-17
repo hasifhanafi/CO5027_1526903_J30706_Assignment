@@ -10,7 +10,9 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <br />
+        <h1>Register:</h1>
+    <br />
        <p><asp:label runat="server" text="Fullname:" ID="lblFullname"></asp:label>
     <asp:textbox runat="server" ID="txtFullname" Width="206px"></asp:textbox></p>
     <br />

@@ -7,7 +7,7 @@
 
     <!-- The Code below was retrieved from http://tutorials.tinyappco.com/ASPNET/Gridviews -->
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="ProductDataSource" Height="211px" Width="995px" CellSpacing="-1" GridLines="None" BackColor="#FFFF99" ShowFooter="True" >
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="ProductDataSource" Height="211px" Width="995px" BackColor="#CCCCCC" ShowFooter="True" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" ForeColor="Black" CellSpacing="2" >
         
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ButtonType="Button" />
@@ -28,10 +28,9 @@
             </asp:TemplateField>
 
             <asp:TemplateField HeaderText="Name" SortExpression="Name">
-                
+
                 <EditItemTemplate>
                     <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("Name") %>'></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="reqName" runat="server" ErrorMessage="<br/>Name is a required field" BackColor="Red" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
                 </EditItemTemplate>
 
                 <ItemTemplate>
@@ -46,17 +45,16 @@
             </asp:TemplateField>
 
             <asp:TemplateField HeaderText="Code" SortExpression="Code">
-                
+
                 <EditItemTemplate>
                     <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("Code") %>'></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="reqCode" runat="server" ErrorMessage="<br/>Code is a required field" BackColor="Red" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
                 </EditItemTemplate>
 
                 <ItemTemplate>
                     <asp:Label ID="Label3" runat="server" Text='<%# Bind("Code") %>'></asp:Label>
                 </ItemTemplate>
 
-                <FooterTemplate>
+                 <FooterTemplate>
                     <asp:TextBox ID="txtCode" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="reqCode1" runat="server" ErrorMessage="<br/>Code is a required field" BackColor="Red" ControlToValidate="txtCode" ValidationGroup="Insert"></asp:RequiredFieldValidator>
                 </EditItemTemplate>
@@ -65,17 +63,16 @@
             </asp:TemplateField>
 
             <asp:TemplateField HeaderText="Price" SortExpression="Price">
-                
+
                 <EditItemTemplate>
                     <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("Price") %>'></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="reqPrice" runat="server" ErrorMessage="<br/>Price is a required field" BackColor="Red" ControlToValidate="TextBox3"></asp:RequiredFieldValidator>
                 </EditItemTemplate>
 
                 <ItemTemplate>
                     <asp:Label ID="Label4" runat="server" Text='<%# Bind("Price") %>'></asp:Label>
                 </ItemTemplate>
 
-                <FooterTemplate>
+                  <FooterTemplate>
                     <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
                      <asp:RequiredFieldValidator ID="reqPrice1" runat="server" ErrorMessage="<br/>Price is a required field" BackColor="Red" ControlToValidate="txtPrice" ValidationGroup="Insert"></asp:RequiredFieldValidator>
                 </FooterTemplate>
@@ -83,24 +80,35 @@
             </asp:TemplateField>
 
             <asp:TemplateField HeaderText="Stock" SortExpression="Stock">
-                
+
                 <EditItemTemplate>
                     <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("Stock") %>'></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="reqStock" runat="server" ErrorMessage="<br/>Stock is a required field" BackColor="Red" ControlToValidate="TextBox4"></asp:RequiredFieldValidator>
                 </EditItemTemplate>
 
                 <ItemTemplate>
                     <asp:Label ID="Label5" runat="server" Text='<%# Bind("Stock") %>'></asp:Label>
                 </ItemTemplate>
 
-                <FooterTemplate>
+                 <FooterTemplate>
                     <asp:TextBox ID="txtStock" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="reqStock1" runat="server" ErrorMessage="<br/>Stock is a required field" BackColor="Red" ControlToValidate="txtStock" ValidationGroup="Insert"></asp:RequiredFieldValidator>
                 </FooterTemplate>
 
             </asp:TemplateField>
 
+            <asp:HyperLinkField DataNavigateUrlFields="Id" DataNavigateUrlFormatString="uploadimage.aspx?id={0}" Text="Set Image" />
+
         </Columns>
+
+        <FooterStyle BackColor="#CCCCCC" />
+        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+        <RowStyle BackColor="White" />
+        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+        <SortedAscendingHeaderStyle BackColor="#808080" />
+        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+        <SortedDescendingHeaderStyle BackColor="#383838" />
 
 </asp:GridView>
 
@@ -111,7 +119,7 @@
 
     <!-- The Code below was retrieved from http://tutorials.tinyappco.com/ASPNET/GridViewValidation -->
 
-<asp:SqlDataSource ID="ProductDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1526903_j30706_co5027_asgConnectionString %>" SelectCommand="SELECT * FROM [Product]" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [Product] WHERE [Id] = @original_Id AND (([Name] = @original_Name) OR ([Name] IS NULL AND @original_Name IS NULL)) AND (([Code] = @original_Code) OR ([Code] IS NULL AND @original_Code IS NULL)) AND (([Price] = @original_Price) OR ([Price] IS NULL AND @original_Price IS NULL)) AND (([Stock] = @original_Stock) OR ([Stock] IS NULL AND @original_Stock IS NULL))" InsertCommand="INSERT INTO [Product] ([Name], [Code], [Price], [Stock]) VALUES (@Name, @Code, @Price, @Stock)" OldValuesParameterFormatString="original_{0}" UpdateCommand="UPDATE [Product] SET [Name] = @Name, [Code] = @Code, [Price] = @Price, [Stock] = @Stock WHERE [Id] = @original_Id AND (([Name] = @original_Name) OR ([Name] IS NULL AND @original_Name IS NULL)) AND (([Code] = @original_Code) OR ([Code] IS NULL AND @original_Code IS NULL)) AND (([Price] = @original_Price) OR ([Price] IS NULL AND @original_Price IS NULL)) AND (([Stock] = @original_Stock) OR ([Stock] IS NULL AND @original_Stock IS NULL))">
+<asp:SqlDataSource ID="ProductDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1526903_j30706_co5027_asgConnectionString2 %>" SelectCommand="SELECT * FROM [Product]" OldValuesParameterFormatString="original_{0}" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [Product] WHERE [Id] = @original_Id AND (([Name] = @original_Name) OR ([Name] IS NULL AND @original_Name IS NULL)) AND (([Code] = @original_Code) OR ([Code] IS NULL AND @original_Code IS NULL)) AND (([Price] = @original_Price) OR ([Price] IS NULL AND @original_Price IS NULL)) AND (([Stock] = @original_Stock) OR ([Stock] IS NULL AND @original_Stock IS NULL))" InsertCommand="INSERT INTO [Product] ([Name], [Code], [Price], [Stock]) VALUES (@Name, @Code, @Price, @Stock)" UpdateCommand="UPDATE [Product] SET [Name] = @Name, [Code] = @Code, [Price] = @Price, [Stock] = @Stock WHERE [Id] = @original_Id AND (([Name] = @original_Name) OR ([Name] IS NULL AND @original_Name IS NULL)) AND (([Code] = @original_Code) OR ([Code] IS NULL AND @original_Code IS NULL)) AND (([Price] = @original_Price) OR ([Price] IS NULL AND @original_Price IS NULL)) AND (([Stock] = @original_Stock) OR ([Stock] IS NULL AND @original_Stock IS NULL))">
     <DeleteParameters>
         <asp:Parameter Name="original_Id" Type="Int32" />
         <asp:Parameter Name="original_Name" Type="String" />
@@ -137,7 +145,7 @@
         <asp:Parameter Name="original_Stock" Type="Int32" />
     </UpdateParameters>
     </asp:SqlDataSource>
-
+        
     <br />
     <br />
 </asp:Content>

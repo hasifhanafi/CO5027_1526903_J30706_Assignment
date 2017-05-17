@@ -7,27 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _1526903_J30706_CO5027.Admin {
+namespace _1526903_J30706_CO5027 {
     
     
-    public partial class _default {
+    public partial class uploadimage {
         
         /// <summary>
-        /// rptrProduct control.
+        /// imgFileUploadControl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptrProduct;
+        protected global::System.Web.UI.WebControls.FileUpload imgFileUploadControl;
         
         /// <summary>
-        /// producttDataSource1 control.
+        /// btnUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource producttDataSource1;
+        protected global::System.Web.UI.WebControls.Button btnUpload;
+        
+        /// <summary>
+        /// CurrentImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image CurrentImage;
     }
 }

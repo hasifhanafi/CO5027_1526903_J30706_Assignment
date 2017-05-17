@@ -7,27 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _1526903_J30706_CO5027.Admin {
+namespace _1526903_J30706_CO5027 {
     
     
-    public partial class _default {
+    public partial class productdetail {
         
         /// <summary>
-        /// rptrProduct control.
+        /// FormView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptrProduct;
+        protected global::System.Web.UI.WebControls.FormView FormView1;
         
         /// <summary>
-        /// producttDataSource1 control.
+        /// productDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource producttDataSource1;
+        protected global::System.Web.UI.WebControls.SqlDataSource productDataSource1;
     }
 }

@@ -30,10 +30,10 @@
 		
 	<nav style="height: 37px">		
 		<a href="~/default.aspx" runat="server">Home</a>
-		<a href="~/product.aspx" runat="server">Product</a>
 		<a href="~/about.aspx" runat="server">About</a>
 		<a href="~/contact.aspx" runat="server">Contact</a>
         <a href="~/login.aspx" runat="server">Login</a>
+       
 	</nav>       
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -48,8 +48,9 @@
     	<div class="footer">   
 
             <nav>
-            <p><a href="~/admin.aspx" runat="server">Administrator</a></p>
+                 <a href="~/admin.aspx" runat="server">Administrator</a>
             </nav>
+            
             
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border-style: none; border-color: inherit; border-width: 0;"

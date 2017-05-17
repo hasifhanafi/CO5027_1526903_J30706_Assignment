@@ -26,14 +26,14 @@ namespace _1526903_J30706_CO5027
 
         protected void btnlogin_Click(object sender, EventArgs e)
         {
-            var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            var identityDbContext = new IdentityDbContext("db_1526903_j30706_co5027_asgConnectionString2");
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var userManager = new UserManager<IdentityUser>(userStore);
             var user = userManager.Find(TxtBoxUsername.Text, TxtPassword.Text);
             if (user != null)
             {
                 LogUserIn(userManager, user);
-                Server.Transfer("privatePage.aspx", true);
+                Server.Transfer("admin.aspx", true);
             }
             else
             {

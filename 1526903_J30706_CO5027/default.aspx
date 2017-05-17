@@ -71,25 +71,60 @@
 		<h2>Product:</h2>
 
            <br /> 
-
+ 
 			<table id="table1">
 				<tr>
 					<td>
-					<img src="images/clothes1.jpg" alt="clothes1" width="350" height="350" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/></td>
-					<td>
-					<img src="images/clothes2.jpg" alt="clothes2" width="350" height="350" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/></td>
-					<td>
-					<img src="images/clothes3.jpg" alt="clothes3" width="350" height="350" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/></td>
+					<img src="images/clothes1.jpg" alt="clothes1" width="350" height="350" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" id="ZaloraA" />
+                        <div class="label">ZaloraA (BND110) </div>
+					</td>
+				
+                    <td>
+					<img src="images/clothes2.jpg" alt="clothes2" width="350" height="350" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" id="Guccui" />
+                        <div class="label">Guccui (BND110) </div>
+                    </td>
+					
+                    <td>
+					<img src="images/clothes3.jpg" alt="clothes3" width="350" height="350" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" id="Cotton ONz" />
+                        <div class="label">Cotton ONz (BND110) </div>
+                    </td>
 				</tr>
                 	<tr>
 					<td>
-					<img src="images/clothes4.jpg" alt="clothes4" width="350" height="350" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/></td>
-					<td>
-					<img src="images/clothes5.jpg" alt="clothes5" width="350" height="350" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/></td>
-					<td>
-					<img src="images/clothes6.jpg" alt="clothes6" width="350" height="350" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/></td>
-				</tr>
+					<img src="images/clothes4.jpg" alt="clothes4" width="350" height="350" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/ id="ZaloraZ">
+                        <div class="label">ZaloraZ (BND110) </div>
+					</td>
+					
+                    <td>
+					<img src="images/clothes5.jpg" alt="clothes5" width="350" height="350" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" id="Guccung" />
+                        <div class="label">Guccung (BND110) </div>
+                    </td>
+					
+                    <td>
+					<img src="images/clothes6.jpg" alt="clothes6" width="350" height="350" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" id="Guccie" />
+                        <div class="label">Guccie (BND110) A</div>
+				
+                </tr>
+
 				</table>
+  
+
+      <asp:Repeater ID="rptrProduct" runat="server" DataSourceID="producttDataSource1">
+        <HeaderTemplate><div class="about-style1"></HeaderTemplate>
+            <ItemTemplate>
+                <li>
+                    <a href="<%# Eval ("Id", "productdetail.aspx?Id={0}") %>"> <%#Eval("Name") %>
+                    </a>
+                </li>
+            </ItemTemplate>
+            <FooterTemplate></div></FooterTemplate>
+    </asp:Repeater>
+		
+   
+		
+    <asp:SqlDataSource ID="producttDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1526903_j30706_co5027_asgConnectionString2 %>" SelectCommand="SELECT * FROM [Product]"></asp:SqlDataSource>
+
+
 
 				<div id="myModal" class="modal">
 								<span class="close cursor" onclick="closeModal()">&times;</span>
@@ -129,12 +164,13 @@
 							<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
                                     </div>
+                    </div>
 
-				</div>    
 			
+    
+  
 		
-	
-		
+   
 		
 <script>
 
